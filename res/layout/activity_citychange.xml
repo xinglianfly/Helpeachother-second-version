@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff">
+	<ListView
+		android:id="@+id/mainlist"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#ffffff"
+		android:scrollbars="none"
+		android:cacheColorHint="#00000000"
+		android:divider="@android:color/darker_gray"
+		android:dividerHeight="1dip"
+		/>
+
+ 	<TextView
+ 	    android:id="@+id/main_tv01"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="30dp"
+ 	   
+ 	    android:gravity="center_vertical"
+ 	     android:background="#F0F0F0"
+ 	   android:textColor="#ff55bb22"
+ 	    android:textSize="20sp" 
+ 	    android:text="9823"
+ 	    android:paddingLeft="10dp"/>
+ 
+ 	<cn.edu.sdu.online.view.MySideBar
+ 		android:id="@+id/myview"
+ 		android:layout_gravity="right"
+ 		android:layout_width="30dip"
+ 		android:layout_height="fill_parent"
+ 		/>        
+ </FrameLayout>

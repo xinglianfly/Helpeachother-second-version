@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_greyandwhite"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/image_backg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/color_white" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/head_img" />
+
+        <RelativeLayout
+            android:id="@+id/Layout_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/iv_head" >
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="超人:"
+                android:textColor="@color/color_blue"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_nickname"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/tv_nickname"
+                android:src="@drawable/secret" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/formal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layout_top"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:maxLines="2"
+            android:text="河南新密市刘寨镇村民反映,为了强迫拆迁户搬出,1月27日夜里,银基集团轩辕圣境开发商带着钩机,对刘寨"
+            android:textColor="@color/color_grey"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/iv_head"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/color_greyandwhite" />
+
+        <RelativeLayout
+            android:id="@+id/location_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_head"
+            android:layout_below="@+id/iv_head"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="48dp" >
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/location_grey" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_location"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/iv_location"
+                android:maxLength="6"
+                android:text="山东大学齐鲁软件学院"
+                android:textColor="@color/color_grey"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reward_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/location_bottom"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/reward_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:paddingBottom="0dp"
+                android:text="悬赏:"
+                android:textColor="@color/color_blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/reward_mark"
+                android:maxLength="6"
+                android:text="一起吃饭aaa"
+                android:textColor="@color/color_blue"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/location_bottom"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="25dp" >
+
+            <TextView
+                android:id="@+id/time_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:paddingBottom="0dp"
+                android:text="截至:"
+                android:textColor="@color/color_blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_lefttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/time_mark"
+                android:maxLength="9"
+                android:text="20150408"
+                android:textColor="@color/color_blue"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/bt_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/formal_text"
+            android:layout_alignLeft="@+id/bt_help"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_delete"
+           />
+
+        <ImageButton
+            android:id="@+id/bt_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Layout_top"
+            android:layout_alignBottom="@+id/Layout_top"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@drawable/helpbutton_icon" />
+    </RelativeLayout>
+
+</FrameLayout>

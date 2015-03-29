@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/message_bk" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#77EDC7" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/changepass"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_person" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ems="4"
+            android:gravity="end"
+            android:text="@string/old_password"
+            android:textColor="#44CDA8" />
+
+        <EditText
+            android:id="@+id/et_oldpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textView3"
+            android:background="@drawable/etoldps"
+            android:gravity="center"
+            android:password="true"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ems="4"
+            android:gravity="end"
+            android:text="@string/new_password"
+            android:textColor="#44CDA8" />
+
+        <EditText
+            android:id="@+id/et_newpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textView4"
+            android:background="@drawable/etpass"
+            android:gravity="center"
+            android:password="true"
+            android:textColor="#63DCBC" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_confirmnewpass"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ems="4"
+            android:gravity="end"
+            android:text="@string/confirm_password"
+            android:textColor="#44CDA8" />
+
+        <EditText
+            android:id="@+id/et_confirmnewpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textView5"
+            android:background="@drawable/etpass"
+            android:gravity="center"
+            android:password="true"
+            android:textColor="#63DCBC" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/cb_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/relativeLayout5"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_marginTop="20dp"
+        android:text="@string/display_pw"
+        android:textColor="@color/color_black" />
+
+    <ImageView
+        android:id="@+id/im_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/save_pwd" />
+
+</RelativeLayout>

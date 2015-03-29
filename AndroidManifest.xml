@@ -1,0 +1,183 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.sdu.online"
+    android:versionCode="30"
+    android:versionName="1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+
+    <application
+        android:name="cn.edu.sdu.online.share.FloatApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="cn.edu.sdu.online.container.FragmentTabsPager"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="cn.edu.sdu.online.activity.CompleteContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+    <!--     <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:screenOrientation="portrait" /> -->
+
+      <!--   <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55090906fd98c54b55000598" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" /> -->
+
+        <activity
+            android:name="com.umeng.fb.ContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="vo8gPkbOS2I4frlELNEgUyaB" />
+
+        <activity
+            android:name="cn.edu.sdu.online.activity.SplashActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.renn.rennsdk.oauth.OAuthActivity"
+            android:configChanges="orientation|navigation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.edu.sdu.online.activity.PublishTaskActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.taskDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.MyTaskDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.ChangePersonActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.SearchDestinationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.SelectPlaceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.ChangePassW"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.MessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.DetailedTaskActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.ChatClient"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.edu.sdu.online.activity.PersonInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service
+            android:name="cn.edu.sdu.online.service.LoginService"
+            android:enabled="true" >
+        </service>
+    </application>
+   
+</manifest>

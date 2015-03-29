@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#77EDC7" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/completeInfo"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/back_person" />
+
+        <ImageView
+            android:id="@+id/im_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/save_person" >
+        </ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <ImageView
+                    android:id="@+id/iv_divide1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/divider" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:ems="2"
+                    android:text="@string/email"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide1"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:background="#FFF"
+                    android:singleLine="true"
+                    android:text="jackieshawn95@gmail.com"
+                    android:textSize="18sp" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp" >
+
+                <ImageView
+                    android:id="@+id/iv_divide2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/divider" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:ems="2"
+                    android:text="@string/headphoto"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/change_info_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView3"
+                    android:layout_alignEnd="@+id/iv_divide2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignRight="@+id/iv_divide2"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/head_img" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <ImageView
+                    android:id="@+id/iv_divide3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/divider" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:ems="2"
+                    android:text="@string/nikename"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/tv_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide3"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/textView4"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:background="#FFF"
+                    android:hint="@string/nike_hint"
+                    android:minEms="10"
+                    android:singleLine="true"
+                    android:textSize="18sp" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <ImageView
+                    android:id="@+id/iv_divide4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/divider" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:ems="2"
+                    android:text="@string/sex"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignBottom="@+id/textView5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/textView5"
+                    android:layout_toRightOf="@+id/textView5" >
+
+                    <ImageView
+                        android:id="@+id/iv_se_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/male" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_toEndOf="@+id/iv_se_male"
+                        android:layout_toRightOf="@+id/iv_se_male"
+                        android:text="@string/male"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_se_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/textView6"
+                        android:layout_toRightOf="@+id/textView6"
+                        android:src="@drawable/femaleds" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_toEndOf="@+id/iv_se_female"
+                        android:layout_toRightOf="@+id/iv_se_female"
+                        android:text="@string/female"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_se_secret"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/textView7"
+                        android:layout_toRightOf="@+id/textView7"
+                        android:src="@drawable/secretds" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_toEndOf="@+id/iv_se_secret"
+                        android:layout_toRightOf="@+id/iv_se_secret"
+                        android:text="@string/secret"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <ImageView
+                    android:id="@+id/iv_divide5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/divider" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:ems="2"
+                    android:text="@string/school"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/tv_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide5"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/textView9"
+                    android:layout_toRightOf="@+id/textView9"
+                    android:background="#FFF"
+                    android:minEms="10"
+                    android:singleLine="true"
+                    android:textSize="18sp" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <ImageView
+                    android:id="@+id/iv_divide6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/divider" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide6"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:ems="2"
+                    android:text="@string/phone"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide6"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/textView10"
+                    android:layout_toRightOf="@+id/textView10"
+                    android:background="#FFF"
+                    android:minEms="10"
+                    android:singleLine="true"
+                    android:textSize="18sp" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <ImageView
+                    android:id="@+id/iv_divide7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/divider" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:ems="2"
+                    android:text="@string/QQ"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/tv_QQ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide7"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/textView11"
+                    android:layout_toRightOf="@+id/textView11"
+                    android:background="#FFF"
+                    android:minEms="10"
+                    android:singleLine="true"
+                    android:textSize="18sp" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <ImageView
+                    android:id="@+id/iv_divide8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/divider" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:ems="2"
+                    android:text="@string/wechat"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/tv_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide8"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/textView12"
+                    android:layout_toRightOf="@+id/textView12"
+                    android:background="#FFF"
+                    android:minEms="10"
+                    android:singleLine="true"
+                    android:textSize="18sp" >
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_birth"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <ImageView
+                    android:id="@+id/iv_divide9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/divider" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide9"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:ems="2"
+                    android:text="@string/birthday"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/iv_divide9"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/textView13"
+                    android:layout_toRightOf="@+id/textView13"
+                    android:background="#FFF"
+                    android:hint="@string/sel_birth"
+                    android:minEms="10"
+                    android:singleLine="true"
+                    android:textSize="18sp" >
+                </TextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <ImageView
+                    android:id="@+id/im_changepass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/changepass" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+    
+
+</LinearLayout>

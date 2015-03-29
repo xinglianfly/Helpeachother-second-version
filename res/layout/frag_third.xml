@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#FCFCFC" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/searchTask"
+            android:textColor="#4AD7B1"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_back"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <Button
+                android:id="@+id/bt_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/back" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/bt_back"
+                android:layout_toRightOf="@+id/bt_back"
+                android:src="@drawable/helplogo" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/location_pub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/location_iconbig" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:background="@color/color_greyandwhite" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <AutoCompleteTextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bt_search"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/bt_search"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/bt_search"
+            android:background="@drawable/background"
+            android:completionHint="请选择"
+            android:dropDownHeight="300dp"
+            android:hint="搜寻任务"
+            android:singleLine="true"
+            android:textColor="@color/color_blue" />
+
+        <Button
+            android:id="@+id/bt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:background="@color/color_blue"
+            android:text="搜 索"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <cn.edu.sdu.online.view.RefreshListView
+            android:id="@+id/search_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</LinearLayout>
